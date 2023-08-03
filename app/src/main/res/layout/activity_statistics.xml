@@ -6,36 +6,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#ffffff"
     tools:context=".Statistics">
 
     <!--Gradient background-->
-    <View
-        android:id="@+id/stats_background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/gradient_drawable" />
 
 
     <!--Workout container box; **NOTE edit constraitns & colours-->
+
+    <View
+        android:id="@+id/grad_layer1"
+        android:layout_width="451dp"
+        android:layout_height="995dp"
+        android:background="@drawable/black_shadow_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-84dp" />
+
+    <View
+        android:id="@+id/grad_layer2"
+        android:layout_width="443dp"
+        android:layout_height="1895dp"
+        android:background="@drawable/purple_gradient_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-323dp" />
+
+
+    <!--General container box; **NOTE edit constraitns & colours-->
+
+    <View
+        android:id="@+id/grad_layer3"
+        android:layout_width="426dp"
+        android:layout_height="1066dp"
+        android:background="@drawable/light_pink_gradient_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-239dp" />
+
     <View
         android:id="@+id/stats_workout_container"
-        android:layout_width="308dp"
-        android:layout_height="382dp"
+        android:layout_width="360dp"
+        android:layout_height="339dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/stats_container"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/stats_background"
-        app:layout_constraintTop_toBottomOf="@+id/stats_background"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/stats_workout_container2"
+        android:layout_width="360dp"
+        android:layout_height="206dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="440dp"
+        android:background="@drawable/stats_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="24dp"
+        tools:text="Statistics" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="89dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="GENERAL"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="109dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="WORKOUT"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="339dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories Burned"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="127dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

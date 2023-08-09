@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Auto layout, variables, and unit scale are =not yet supported -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/nutrition_u"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/nutrition_background"
+	android:clipToOutline="true">
+
+	<RelativeLayout
+		android:id="@+id/grad"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		>
+		<View
+			android:id="@+id/light_pink_"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/light_pink_gradient_drawable"
+			/>
+		<View
+			android:id="@+id/purple_grad"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/purple_gradient_drawable"
+			/>
+		<View
+			android:id="@+id/black_shado"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/black_shadow_drawable"/>
+
+	</RelativeLayout>
+
+	<!-- Auto layout, variables, and unit scale are not yet supported -->
+	<RelativeLayout
+		android:id="@+id/navbar"
+		android:layout_height="50dp"
+		android:layout_width="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginBottom="5dp">
+
+		<View
+			android:id="@+id/nutrition_ic"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="50dp"
+			android:layout_marginRight="50dp"
+			android:background="@drawable/nutrition_icon" />
+
+		<View
+			android:id="@+id/workouts_ic"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/workout_icon"
+			/>
+
+		<View
+			android:id="@+id/person_ic"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="50dp"
+			android:layout_marginRight="50dp"
+			android:background="@drawable/person_icon" />
+	</RelativeLayout>
+
+
+	<RelativeLayout android:layout_width="match_parent"
+		android:layout_alignParentTop="true"
+		android:layout_above="@id/navbar"
+		android:layout_height="0dp">
+		<!-- Auto layout, variables, and unit scale are not yet supported -->
+
+		<TextView
+			android:id="@+id/today_s_nut"
+			android:layout_width="296dp"
+			android:layout_height="59dp"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="30dp"
+			android:text="@string/today_s_nut"
+			android:textAppearance="@style/today_s_nut"
+			android:gravity="top"
+			/>
+
+		<androidx.viewpager2.widget.ViewPager2
+			android:id="@+id/calorie_mac"
+			android:layout_width="310dp"
+			android:layout_height="220dp"
+			android:layout_below="@id/today_s_nut"
+			android:layout_centerInParent="true"
+			android:background="@drawable/calorie_mac"
+			android:foregroundTintMode="src_over" />
+
+		<!-- Auto layout, variables, and unit scale are not yet supported -->
+		<SearchView
+			android:id="@+id/search_bar"
+			android:layout_width="310dp"
+			android:layout_height="50dp"
+			android:layout_below="@id/calorie_mac"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/search_bar"
+			android:iconifiedByDefault="false"
+			android:queryHint="Search for food"
+			android:searchIcon="@drawable/search_icon"
+			android:theme="@style/ThemeOverlay.SearchView">
+
+		</SearchView>
+
+		<LinearLayout
+			android:layout_width="310dp"
+			android:layout_height="match_parent"
+			android:layout_below="@id/search_bar"
+			android:layout_centerInParent="true"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:background="@drawable/calorie_mac"
+			android:orientation="vertical"
+			android:padding="20dp">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="30dp">
+
+				<Button
+					android:id="@+id/leftButton"
+					android:layout_width="30dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentLeft="true"
+					android:background="@drawable/back_icon"/>
+
+				<TextView
+					android:id="@+id/date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_centerVertical="true"
+					android:text="TODAY"
+					android:textColor="@color/white"
+					android:textSize="16sp"
+					android:textStyle="bold" />
+
+				<Button
+					android:id="@+id/rightButton"
+					android:layout_width="30dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:background="@drawable/forward_icon" />
+			</RelativeLayout>
+		</LinearLayout>
+
+
+	</RelativeLayout>
+</RelativeLayout>

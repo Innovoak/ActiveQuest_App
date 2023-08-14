@@ -1,4 +1,5 @@
 <resources>
 	<string name="app_name">ActiveQuest</string>
 	<string name="today_s_nut">Nutrition</string>
+	<string name="url">http://localhost:8080/ActiveQuest_REPO/</string>
 </resources>

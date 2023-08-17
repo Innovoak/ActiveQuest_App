@@ -13,6 +13,18 @@
         android:theme="@style/Theme.ActiveQuest"
         tools:targetApi="31">
         <activity
+            android:name=".LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Nutrition_Food_Detail_Tab"
+            android:exported="false" />
+        <activity
+            android:name=".NutritionMealFoodTab"
+            android:exported="false" />
+        <activity
             android:name=".quests_frame"
             android:exported="false" />
         <activity

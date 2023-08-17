@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nutrition_background"
+    tools:context=".NutritionMealFoodTab">
+
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="328dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/calorie_mac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/search_bar"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search for food"
+        android:searchIcon="@drawable/search_icon"
+        android:theme="@style/ThemeOverlay.SearchView"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </SearchView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="338dp"
+        android:layout_height="389dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/calorie_mac"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/SearchHistory"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Search History"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/History"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="History"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#600E68"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Foodhist"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:text="   Food 1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/foodinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   cals, amount, specification"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#600E68"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Foodhist"
+                style="@style/foodhist2"
+                android:text="   Food 2" />
+
+            <TextView
+                android:id="@+id/foodinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   cals, amount, specification"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/BestMatch"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Best Match"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#600E68"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Foodhist"
+                style="@style/foodhist2"
+                android:text="   Food 3" />
+
+            <TextView
+                android:id="@+id/foodinfo"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="   cals, amount, specification"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/space9"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#600E68"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Foodhist"
+                style="@style/foodhist2"
+                android:text="   Food 2" />
+
+            <TextView
+                android:id="@+id/foodinfo"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="   cals, amount, specification"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Nutr"
+        android:layout_width="305dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="top"
+        android:text="@string/today_s_nut"
+        android:textAppearance="@style/today_s_nut"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="593dp">
+
+        <View
+            android:id="@+id/nutrition_ic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/nutrition_icon" />
+
+        <View
+            android:id="@+id/workouts_ic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/workout_icon" />
+
+        <View
+            android:id="@+id/person_ic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/person_icon" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="214dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="28dp"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toTopOf="@+id/search_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

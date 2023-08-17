@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nutrition_Food_Detail_Tab">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="409dp"
+      android:layout_height="657dp"
+      android:background="@color/nutrition_background"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="1dp">
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="593dp">
+
+      <View
+          android:id="@+id/nutrition_ic"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"
+          android:background="@drawable/nutrition_icon" />
+
+      <View
+          android:id="@+id/workouts_ic"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/workout_icon" />
+
+      <View
+          android:id="@+id/person_ic"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"
+          android:background="@drawable/person_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/AddFood"
+        android:layout_width="212dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="top"
+        android:text="Add Food"
+        android:textAppearance="@style/today_s_nut"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="347dp"
+        android:layout_height="534dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="4dp"
+        android:background="#4B1070"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="parent">
+
+      <TextView
+          android:id="@+id/addFood10"
+          android:layout_width="304dp"
+          android:layout_height="25dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Food Name"
+          android:textAppearance="@style/today_s_nut"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:textSize="18sp" />
+
+      <TextView
+          android:id="@+id/addFood"
+          android:layout_width="304dp"
+          android:layout_height="25dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="9dp"
+          android:gravity="top"
+          android:text="Percentage of Goals"
+          android:textAppearance="@style/today_s_nut"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/dash9"
+          tools:textSize="18sp" />
+
+      <TextView
+          android:id="@+id/addFood2"
+          android:layout_width="59dp"
+          android:layout_height="23dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Date"
+          android:textAppearance="@style/today_s_nut"
+          tools:layout_editor_absoluteX="17dp"
+          tools:layout_editor_absoluteY="39dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/dash"
+          android:layout_width="311dp"
+          android:layout_height="27dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="_______________________________________________"
+          android:textAppearance="@style/today_s_nut"
+          tools:layout_editor_absoluteX="9dp"
+          tools:layout_editor_absoluteY="16dp"
+          tools:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/addFood3"
+          android:layout_width="59dp"
+          android:layout_height="23dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Meal"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.059"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="70dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/dash2"
+          android:layout_width="311dp"
+          android:layout_height="27dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="28dp"
+          android:layout_marginBottom="3dp"
+          android:gravity="top"
+          android:text="_______________________________________________"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintBottom_toTopOf="@+id/addFood3"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/dash"
+          tools:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/dash3"
+          android:layout_width="311dp"
+          android:layout_height="27dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="28dp"
+          android:gravity="top"
+          android:text="_______________________________________________"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="87dp"
+          tools:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/dash5"
+          android:layout_width="311dp"
+          android:layout_height="27dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="28dp"
+          android:gravity="top"
+          android:text="_______________________________________________"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="134dp"
+          tools:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/addFood5"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Calories"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.075"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="161dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/dash6"
+          android:layout_width="311dp"
+          android:layout_height="27dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="28dp"
+          android:gravity="top"
+          android:text="_______________________________________________"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="170dp"
+          tools:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/addFood6"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Carbohydrates"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.075"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="197dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/dash7"
+          android:layout_width="311dp"
+          android:layout_height="27dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="28dp"
+          android:gravity="top"
+          android:text="_______________________________________________"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="210dp"
+          tools:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/addFood7"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Fat"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.075"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="233dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/dash8"
+          android:layout_width="311dp"
+          android:layout_height="27dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="28dp"
+          android:gravity="top"
+          android:text="_______________________________________________"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="249dp"
+          tools:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/addFood8"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Protein"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.075"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="276dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/dash9"
+          android:layout_width="311dp"
+          android:layout_height="27dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="28dp"
+          android:gravity="top"
+          android:text="_______________________________________________"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="290dp"
+          tools:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/addFood4"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Number of Servings"
+          android:textAppearance="@style/today_s_nut"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.075"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="114dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/addFood13"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Carbohydrates"
+          android:textAppearance="@style/today_s_nut"
+          tools:layout_editor_absoluteX="17dp"
+          tools:layout_editor_absoluteY="396dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/addFood12"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Calories"
+          android:textAppearance="@style/today_s_nut"
+          tools:layout_editor_absoluteX="17dp"
+          tools:layout_editor_absoluteY="356dp"
+          tools:textSize="14sp" />
+
+      <ProgressBar
+          android:id="@+id/progressBar3"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="259dp"
+          android:layout_height="25dp"
+          android:layout_marginStart="17dp"
+          android:layout_marginEnd="4dp"
+          android:fadeScrollbars="false"
+          android:progressBackgroundTint="@color/white"
+          app:layout_constraintEnd_toStartOf="@+id/editTextNumber7"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="371dp" />
+
+      <ProgressBar
+          android:id="@+id/progressBar5"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="259dp"
+          android:layout_height="25dp"
+          android:layout_marginStart="20dp"
+          android:fadeScrollbars="false"
+          android:progressBackgroundTint="@color/white"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:layout_editor_absoluteY="413dp" />
+
+      <ProgressBar
+          android:id="@+id/progressBar4"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="259dp"
+          android:layout_height="25dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="3dp"
+          android:layout_marginEnd="7dp"
+          android:fadeScrollbars="false"
+          android:progressBackgroundTint="@color/white"
+          app:layout_constraintBottom_toTopOf="@+id/addFood15"
+          app:layout_constraintEnd_toStartOf="@+id/editTextNumber9"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/addFood14" />
+
+      <TextView
+          android:id="@+id/addFood15"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Protein"
+          android:textAppearance="@style/today_s_nut"
+          tools:layout_editor_absoluteX="16dp"
+          tools:layout_editor_absoluteY="476dp"
+          tools:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/addFood14"
+          android:layout_width="149dp"
+          android:layout_height="24dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:gravity="top"
+          android:text="Fat"
+          android:textAppearance="@style/today_s_nut"
+          tools:layout_editor_absoluteX="16dp"
+          tools:layout_editor_absoluteY="438dp"
+          tools:textSize="14sp" />
+
+      <ProgressBar
+          android:id="@+id/progressBar2"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="259dp"
+          android:layout_height="25dp"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginEnd="8dp"
+          android:layout_marginBottom="25dp"
+          android:fadeScrollbars="false"
+          android:progressBackgroundTint="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/editTextNumber10"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/addFood15" />
+
+      <EditText
+          android:id="@+id/date"
+          android:layout_width="80dp"
+          android:layout_height="24dp"
+          android:layout_marginStart="136dp"
+          android:ems="10"
+          android:inputType="date"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/addFood2"
+          tools:layout_editor_absoluteY="35dp" />
+
+      <EditText
+          android:id="@+id/editTextNumber"
+          android:layout_width="51dp"
+          android:layout_height="26dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.606"
+          app:layout_constraintStart_toEndOf="@+id/addFood5"
+          tools:layout_editor_absoluteY="161dp" />
+
+      <EditText
+          android:id="@+id/editTextNumber4"
+          android:layout_width="51dp"
+          android:layout_height="26dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.606"
+          app:layout_constraintStart_toEndOf="@+id/addFood6"
+          tools:layout_editor_absoluteY="197dp" />
+
+      <EditText
+          android:id="@+id/editTextNumber5"
+          android:layout_width="51dp"
+          android:layout_height="26dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.606"
+          app:layout_constraintStart_toEndOf="@+id/addFood8"
+          tools:layout_editor_absoluteY="276dp" />
+
+      <EditText
+          android:id="@+id/editTextNumber7"
+          android:layout_width="36dp"
+          android:layout_height="22dp"
+          android:layout_marginStart="3dp"
+          android:layout_marginEnd="31dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/progressBar3"
+          tools:layout_editor_absoluteY="371dp" />
+
+      <EditText
+          android:id="@+id/editTextNumber8"
+          android:layout_width="36dp"
+          android:layout_height="22dp"
+          android:layout_marginStart="5dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="31dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toEndOf="@+id/progressBar5"
+          app:layout_constraintTop_toBottomOf="@+id/editTextNumber7" />
+
+      <EditText
+          android:id="@+id/editTextNumber6"
+          android:layout_width="51dp"
+          android:layout_height="26dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.606"
+          app:layout_constraintStart_toEndOf="@+id/addFood7"
+          tools:layout_editor_absoluteY="233dp" />
+
+      <EditText
+          android:id="@+id/editTextNumber2"
+          android:layout_width="51dp"
+          android:layout_height="26dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="12dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintBottom_toTopOf="@+id/dash5"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.606"
+          app:layout_constraintStart_toEndOf="@+id/addFood4"
+          app:layout_constraintTop_toBottomOf="@+id/dash3"
+          app:layout_constraintVertical_bias="0.538" />
+
+      <EditText
+          android:id="@+id/editTextNumber9"
+          android:layout_width="36dp"
+          android:layout_height="22dp"
+          android:layout_marginStart="7dp"
+          android:layout_marginTop="18dp"
+          android:layout_marginEnd="29dp"
+          android:layout_marginBottom="9dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintBottom_toTopOf="@+id/editTextNumber10"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/progressBar4"
+          app:layout_constraintTop_toBottomOf="@+id/editTextNumber8" />
+
+      <EditText
+          android:id="@+id/editTextNumber10"
+          android:layout_width="36dp"
+          android:layout_height="22dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="9dp"
+          android:layout_marginEnd="29dp"
+          android:layout_marginBottom="28dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/progressBar2"
+          app:layout_constraintTop_toBottomOf="@+id/editTextNumber9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/button2"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="64dp"
+        android:text="✓"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="24sp" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

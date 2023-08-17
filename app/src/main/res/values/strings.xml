@@ -1,4 +1,4 @@
 <resources>
-	<string name="app_name">ActiveQuest</string>
-	<string name="today_s_nut">Nutrition</string>
+    <string name="app_name">ActiveQuest</string>
+    <string name="today_s_nut">Nutrition</string>
 </resources>

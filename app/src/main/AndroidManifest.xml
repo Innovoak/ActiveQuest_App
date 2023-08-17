@@ -13,6 +13,18 @@
         android:theme="@style/Theme.ActiveQuest"
         tools:targetApi="31">
         <activity
+            android:name=".quests_frame"
+            android:exported="false" />
+        <activity
+            android:name=".goals_frame"
+            android:exported="false" />
+        <activity
+            android:name=".healthdetails_settings"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationSettings"
+            android:exported="false" />
+        <activity
             android:name=".AccountSettings"
             android:exported="false" />
         <activity

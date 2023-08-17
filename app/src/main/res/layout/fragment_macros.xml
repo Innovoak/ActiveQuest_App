@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="310dp"
+	android:layout_height="220dp"
+	android:background="@drawable/calorie_mac"
+	android:padding="20dp"
+	tools:context=".MacrosFragment">
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppins"
+		android:text="MACROS"
+		android:textColor="@color/white"
+		android:textSize="16sp"
+		app:lineHeight="24sp" />
+
+
+	<Space
+		android:id="@+id/space"
+		android:layout_below="@id/title"
+		android:layout_width="fill_parent"
+		android:layout_height="10dp"
+		android:layout_weight="1" />
+
+	<LinearLayout
+		android:id="@+id/carbs_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/space"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/carbs_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="top"
+			android:text="Carbohydrates"
+			android:textColor="@color/white"
+			android:textSize="14sp"
+			app:lineHeight="21sp" />
+
+		<LinearLayout
+			android:id="@+id/carbs_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/carbs_title"
+			android:orientation="horizontal">
+
+			<ProgressBar
+				android:id="@+id/carbsProgressBar"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="145dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:progressBackgroundTint="@android:color/holo_green_light" />
+
+			<Space
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+
+			<TextView
+				android:id="@+id/carbs_goal"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="##/##" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/fat_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/carbs_container"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/fat_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/title"
+			android:gravity="top"
+			android:text="Fat"
+			android:textColor="@color/white"
+			android:textSize="14sp"
+			app:lineHeight="21sp" />
+
+		<LinearLayout
+			android:id="@+id/fat_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/fat_title"
+			android:orientation="horizontal">
+
+			<ProgressBar
+				android:id="@+id/fatProgressBar"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="145dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:progressBackgroundTint="@android:color/holo_green_light" />
+
+			<Space
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+
+			<TextView
+				android:id="@+id/fat_goal"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="##/##" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/protein_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/fat_container"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/protein_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="top"
+			android:text="Protein"
+			android:textColor="@color/white"
+			android:textSize="14sp"
+			app:lineHeight="21sp" />
+
+		<LinearLayout
+			android:id="@+id/protein_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/protein_title"
+			android:orientation="horizontal">
+
+			<ProgressBar
+				android:id="@+id/proteinProgressBar"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="145dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:progressBackgroundTint="@android:color/holo_green_light" />
+
+			<Space
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+
+			<TextView
+				android:id="@+id/protein_goal"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="##/##" />
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

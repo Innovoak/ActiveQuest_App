@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-
 <vector
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="360dp"
-    android:height="800dp"
+    android:height="820dp"
     android:viewportWidth="360"
-    android:viewportHeight="800"
+    android:viewportHeight="820"
     >
     <group>
         <clip-path
@@ -30,9 +28,9 @@
                     <gradient
                         android:type="linear"
                         android:fillAlpha="0.5"
-                        android:startX="match_parent"
+                        android:startX="0"
                         android:startY="400"
-                        android:endX="320"
+                        android:endX="340"
                         android:endY="400"
                         >
                         <item

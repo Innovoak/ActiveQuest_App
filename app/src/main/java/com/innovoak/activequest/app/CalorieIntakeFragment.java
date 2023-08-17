@@ -26,6 +26,7 @@ public class CalorieIntakeFragment extends Fragment {
 
 	public CalorieIntakeFragment() {
 		// Required empty public constructor
+
 	}
 
 	/**

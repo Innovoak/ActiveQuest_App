@@ -37,7 +37,7 @@ android:viewportHeight="219"
 						android:offset="0"
 						/>
 					<item
-						android:color="#1a001a"
+						android:color="@color/nutrition_background"
 						android:offset="0"
 						/>
 				</gradient>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- use this for slide: https://developer.android.com/develop/ui/views/animations/screen-slide-2 -->
 <!-- Auto layout, variables, and unit scale are =not yet supported -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,43 +11,9 @@
 	android:clipToOutline="true">
 
 	<RelativeLayout
-		android:id="@+id/grad"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:layout_alignParentLeft="true"
-		android:layout_alignParentTop="true"
-		>
-		<View
-			android:id="@+id/light_pink_"
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:layout_alignParentLeft="true"
-			android:layout_alignParentRight="true"
-			android:layout_alignParentTop="true"
-			android:layout_alignParentBottom="true"
-			android:background="@drawable/light_pink_gradient_drawable"
-			/>
-		<View
-			android:id="@+id/purple_grad"
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:layout_alignParentLeft="true"
-			android:layout_alignParentRight="true"
-			android:layout_alignParentTop="true"
-			android:layout_alignParentBottom="true"
-			android:background="@drawable/purple_gradient_drawable"
-			/>
-		<View
-			android:id="@+id/black_shado"
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:layout_alignParentLeft="true"
-			android:layout_alignParentRight="true"
-			android:layout_alignParentTop="true"
-			android:layout_alignParentBottom="true"
-			android:background="@drawable/black_shadow_drawable"/>
-
-	</RelativeLayout>
+		android:background="@drawable/gradient_drawable"/>
 
 	<!-- Auto layout, variables, and unit scale are not yet supported -->
 	<RelativeLayout
@@ -56,7 +23,7 @@
 		android:layout_alignParentLeft="true"
 		android:layout_alignParentBottom="true"
 		android:layout_alignParentRight="true"
-		android:layout_marginBottom="5dp">
+		android:background="@color/black">
 
 		<View
 			android:id="@+id/nutrition_ic"
@@ -125,7 +92,7 @@
 			android:iconifiedByDefault="false"
 			android:queryHint="Search for food"
 			android:searchIcon="@drawable/search_icon"
-			android:theme="@style/ThemeOverlay.SearchView">
+			android:theme="@style/SearchViewStyle">
 
 		</SearchView>
 

@@ -8,7 +8,7 @@
 		<item name="android:shadowDy">4</item>
 		<item name="android:shadowRadius">4</item>
 	</style>
-	<style name="ThemeOverlay.SearchView">
+	<style name="SearchViewStyle">
 
 		<!-- Text color -->
 		<item name="android:editTextColor">@color/white</item>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccountSettings">
+    tools:context=".quests_frame">
 
     <View
         android:id="@+id/food_box"
@@ -15,176 +15,116 @@
         android:background="#000000"
         tools:ignore="MissingConstraints" />
 
-    <!-- backgrounds -->
-
     <View
-        android:id="@+id/cirlce"
-        android:layout_width="390dp"
-        android:layout_height="1700dp"
+        android:id="@+id/layer_textu"
+        android:layout_width="380dp"
+        android:layout_height="62dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/purple_color"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="582dp" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:background="@drawable/purple_gradient_drawable"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="-172dp" />
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="6dp" />
 
     <TextView
         android:id="@+id/search_text"
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
+        android:textSize="28dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="115dp"
-        tools:text="Account" />
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="27dp"
+        tools:text="Quests" />
 
     <View
         android:id="@+id/background_"
-        android:layout_width="300dp"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/purple_color"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/purple_color"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="163dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/purple_color"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <View
+        android:layout_width="330dp"
         android:layout_height="80dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="172dp"
-        tools:ignore="MissingConstraints"/>
-
-    <View
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="275dp"
-        tools:ignore="MissingConstraints" />
-
-
-    <View
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
+        android:background="@drawable/purplepink_color"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="350dp" />
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="135dp" />
 
     <View
-        android:layout_width="300dp"
-        android:layout_height="65dp"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
+        android:background="@drawable/purplepink_color"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="425dp" />
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="297dp" />
 
     <View
-        android:layout_width="300dp"
-        android:layout_height="65dp"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
+        android:background="@drawable/purplepink_color"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="500dp" />
-
-    <View
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="575dp" />
-
-    <View
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="630dp" />
-
-    <View
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="705dp" />
-
-    <RelativeLayout
-        android:id="@+id/historyfood"
-        android:layout_width="230dp"
-        android:layout_height="35dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/calorie_mac"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="810dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="47dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginRight="-47dp"
-            android:layout_marginBottom="-7dp"
-            android:text="TextView"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF"
-            android:textSize="16dp"
-            tools:ignore="MissingConstraints"
-            tools:text="DELETE ACCOUNT" />
-    </RelativeLayout>
-
-    <View
-        android:id="@+id/ellipse_6"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/person_icon"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="182dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="454dp" />
 
     <TextView
-        android:id="@+id/miguel_o_ha"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
@@ -195,9 +135,99 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="182dp"
-        tools:text="Miguel O'Hara" />
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="101dp"
+        tools:text="Daily" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="261dp"
+        tools:text="Weekly" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="420dp"
+        tools:text="Monthly" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="594dp"
+        tools:text="Leaderboard" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="179dp"
+        tools:text="##/##" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="340dp"
+        tools:text="##/##" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="496dp"
+        tools:text="##/##" />
 
     <TextView
         android:id="@+id/name_text"
@@ -211,55 +241,14 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textSize="16dp"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="217dp"
-        tools:text="View Profile"
-        tools:ignore="MissingConstraints" />
-
-    <View
-        android:id="@+id/close"
-        android:layout_width="27dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/back_icon"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="115dp"
-        tools:ignore="MissingConstraints" />
-
-    <View
-        android:id="@+id/icon_nav_ar"
-        android:layout_width="27dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/forward_icon"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="283dp"
-        tools:text="Name"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="143dp"
+        tools:text="Burn 1000 calories" />
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -269,13 +258,13 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="360dp"
-        tools:text="Username" />
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="151dp"
+        tools:text="25" />
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -285,13 +274,13 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="432dp"
-        tools:text="Email" />
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="311dp"
+        tools:text="25" />
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -301,61 +290,13 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="507dp"
-        tools:text="Phone" />
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="470dp"
+        tools:text="60" />
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="585dp"
-        tools:text="Change Password" />
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="639dp"
-        tools:text="Language" />
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="713dp"
-        tools:text="Units of Measure" />
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -365,13 +306,13 @@
         android:textColor="#FFFFFF"
         android:textSize="16dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteX="51dp"
         tools:layout_editor_absoluteY="304dp"
-        tools:text="Miguel O'Hara" />
+        tools:text="Do 100 Diamond Pushups" />
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -381,29 +322,13 @@
         android:textColor="#FFFFFF"
         android:textSize="16dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="385dp"
-        tools:text="spiderman2099" />
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textSize="16dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteX="51dp"
         tools:layout_editor_absoluteY="460dp"
-        tools:text="spiderman2099@gmail.com" />
+        tools:text="Run 1000 Km" />
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -411,15 +336,15 @@
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
-        android:textSize="16dp"
+        android:textSize="14dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="535dp"
-        tools:text="123-456-7890" />
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="168dp"
+        tools:text="Progress" />
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -427,112 +352,238 @@
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
-        android:textSize="16dp"
+        android:textSize="14dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="168dp"
+        tools:text="Progress" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="329dp"
+        tools:text="Progress" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="485dp"
+        tools:text="Progress" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="529dp"
+        tools:text="Checkpoints" />
+
+    <View
+        android:id="@+id/carbsprogre"
+        android:layout_width="200dp"
+        android:layout_height="9dp"
+        android:background="@drawable/carbsprogress_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="9dp"
+        android:background="@drawable/carbsprogress_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="9dp"
+        android:background="@drawable/carbsprogress_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+    <View
+        android:id="@+id/pencil"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:background="@drawable/trophy_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:background="@drawable/trophy_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:background="@drawable/trophy_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <View
+        android:id="@+id/plus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/plus_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/plus_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/plus_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/down_icon_2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/down_icon_2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/down_icon_2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/down_icon_2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <View
+        android:id="@+id/selected_co"
+        android:layout_width="55.89dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/nutrition_icon"
+        tools:layout_editor_absoluteX="340dp"
         tools:layout_editor_absoluteY="665dp"
-        tools:text="English" />
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textSize="16dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="740dp"
-        tools:text="Metric" />
+        tools:ignore="MissingConstraints" />
 
     <View
-        android:id="@+id/icon_edit_"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="55.89dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/forward_icon"
+        android:background="@drawable/workout_icon"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="293dp" />
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="665dp" />
 
     <View
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="55.89dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/forward_icon"
+        android:background="@drawable/workout_icon"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="370dp" />
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="665dp" />
 
     <View
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="55.89dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/forward_icon"
+        android:background="@drawable/person_icon"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="442dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="665dp" />
 
-    <View
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/forward_icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="517dp" />
 
-    <View
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/forward_icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="585dp" />
 
-    <View
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/forward_icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="649dp" />
-
-    <View
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/forward_icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="723dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
